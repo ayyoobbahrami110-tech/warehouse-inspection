@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:contentDescription="logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فرم بازدید انبار کارگزاری"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAgencyName"
+            android:hint="نام کارگزاری"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etAgencyCode"
+            android:hint="کد کارگزاری"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etProvince"
+            android:hint="نام استان"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etCounty"
+            android:hint="شهرستان"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etVisitDate"
+            android:hint="تاریخ بازدید"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etArea"
+            android:hint="مساحت انبار (متر مربع)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etCapacity"
+            android:hint="ظرفیت انبار (تن)"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- نمونه یک چک باکس (بقیه را مشابه اضافه کنید) -->
+        <CheckBox
+            android:id="@+id/cbSafety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اصول ایمنی" />
+
+        <CheckBox
+            android:id="@+id/cbNonMandatoryFertilizerPurchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خرید کودهای غیرتکلیفی" />
+
+        <CheckBox
+            android:id="@+id/cbNonMandatoryFertilizerRegistry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثبت کودهای غیرتکلیفی در سامانه" />
+
+        <CheckBox
+            android:id="@+id/cbBulkFertilizerUnload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قابلیت تخلیه کود فله‌ای" />
+
+        <RadioGroup
+            android:id="@+id/rgOwnership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbOwned" android:text="ملکی" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbRented" android:text="استیجاری" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbConsignment" android:text="امانی" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RadioButton android:id="@+id/rbOther" android:text="سایر" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذخیره اطلاعات"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
